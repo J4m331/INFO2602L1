@@ -31,7 +31,7 @@ def get_students():
 @app.route('/student/<id>')
 def get_student(id):
   for student in data:
-    if student['id'] == id:  # filter out the students without the specified id
+    if student['id'] == id:
       return jsonify(student)
 
 
